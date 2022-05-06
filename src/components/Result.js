@@ -22,6 +22,8 @@ function Result(props) {
 
   const result = color.length === 7 ? convertColor(color) : null;
 
+  document.body.style.backgroundColor = result;
+  
   return (
     <input
       type="text"

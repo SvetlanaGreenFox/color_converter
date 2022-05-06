@@ -11,7 +11,7 @@ function ColorConverter() {
     const value = event.target.value;
     setState({ hex: value });
   };
-
+  
   return (
     <form name="converter" >
       <div className="form-wrapper">
