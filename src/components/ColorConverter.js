@@ -11,15 +11,16 @@ function ColorConverter() {
     const value = event.target.value;
     setState({ hex: value });
   };
-  
+
   return (
-    <form name="converter" >
+    <form name="converter">
       <div className="form-wrapper">
         <input
           type="text"
           name="colorHEX"
           className="form-input"
           id="colorHEX"
+          placeholder="Введите цвет"
           onChange={handleInput}
           value={state.hex}
         />

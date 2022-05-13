@@ -22,8 +22,9 @@ function Result(props) {
 
   const result = color.length === 7 ? convertColor(color) : null;
 
-  document.body.style.backgroundColor = result;
-  
+  document.body.style.backgroundColor =
+    result === 'Ошибка!' ? '#FF0000' : result;
+
   return (
     <input
       type="text"
